@@ -81,3 +81,4 @@ stages:
               runtimeStack: 'NODE|10.10'
               package: $(System.ArtifactsDirectory)/drop/$(Build.BuildId).zip
               startUpCommand: 'npm run start'
+              - task: PublishBuildArtifacts@1
